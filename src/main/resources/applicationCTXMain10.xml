@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/c"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <context:annotaion-config><bean class="springBootJsp.springBootJsp.main10.ApplicationConfig"/>
+    </context:annotaion-config>
+    <bean id="student2" class="springBootJsp.springBootJsp.main10.Student">
+        <constructor-arg index="0" value="홍길순"/>
+        <constructor-arg index="1" value="30"/>
+        <constructor-arg index="2">
+            <list>
+                <value>마라톤</value>
+                <value>요리</value>
+            </list>
+        </constructor-arg>
+        <property name="height" value="190"/>
+        <property name="weight" value="70"/>
+    </bean>
+
+</beans>
