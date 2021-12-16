@@ -17,5 +17,8 @@
         <module name="practice_2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="practice_3" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
